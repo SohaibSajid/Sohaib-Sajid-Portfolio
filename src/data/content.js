@@ -91,6 +91,13 @@ export const skillGroups = [
   },
 ]
 
+export const otherHighlights = [
+  'GUI Chess Game (C++)',
+  'Metal Slug Clone (C++, OOP)',
+  'Professional Text Editor',
+  'HugeInteger & HugeFraction Libraries',
+]
+
 export const links = {
   github: 'https://github.com/SohaibSajid56',
   linkedin: 'https://linkedin.com/in/sohaib-sajid-8b5965332',
