@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const facts = [
   { label: 'Studying', value: 'BS Artificial Intelligence, ITU Lahore' },
-  { label: 'Standing', value: '5th semester \u00b7 3.32 GPA \u00b7 Class of 2028' },
+  { label: 'Standing', value: '5th semester \u00b7 3.33 GPA \u00b7 Class of 2028' },
   { label: 'Based in', value: 'Lahore, Pakistan' },
   { label: 'Currently', value: 'Building freelance AI & mobile products end to end' },
 ]
@@ -31,13 +31,30 @@ export default function WhoIAm() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="md:col-span-7 md:pt-2"
         >
-          <p className="text-paper-dim leading-relaxed max-w-lg mb-10">
-            I split my time between coursework in machine learning and MLOps,
-            and freelance client work that forces me to defend every technical
-            choice in plain language. That combination — research instinct,
-            shipping discipline — is the thread running through everything
-            below.
-          </p>
+          <div className="space-y-5 text-paper-dim leading-relaxed max-w-lg mb-10">
+            <p>
+              I'm an AI student with a habit of building the underlying
+              piece myself before trusting a library to do it — a decision
+              boundary, a memory cache, a rendering loop. That habit started
+              long before machine learning: a GUI chess engine, a Metal
+              Slug clone, a working text editor, and HugeInteger/HugeFraction
+              libraries for arithmetic beyond native types, all built on a
+              foundation of data structures, algorithms, and OOP.
+            </p>
+            <p>
+              On the applied side, I split my time between coursework in
+              machine learning and MLOps, and freelance client work — Flutter
+              apps with Firebase and REST integrations, full-stack AI
+              products — that forces me to defend every technical choice in
+              plain, non-technical language.
+            </p>
+            <p>
+              That combination — research instinct, shipping discipline, and
+              a preference for understanding a system rather than just
+              calling its API — is the thread running through everything
+              below.
+            </p>
+          </div>
 
           <dl className="grid grid-cols-2 gap-x-8 gap-y-6 max-w-lg">
             {facts.map((f) => (

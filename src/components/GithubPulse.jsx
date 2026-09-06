@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { otherHighlights } from '../data/content'
 
 const GITHUB_USER = 'SohaibSajid56'
 
@@ -119,6 +120,20 @@ export default function GithubPulse() {
           </div>
         </div>
       )}
+
+      <div className="mt-10 pt-8 border-t border-line/60">
+        <p className="font-mono text-[11px] text-paper-dim/70 mb-3">A few worth naming</p>
+        <div className="flex flex-wrap gap-2">
+          {otherHighlights.map((item) => (
+            <span
+              key={item}
+              className="font-mono text-[11px] px-2.5 py-1.5 border border-line text-paper-dim rounded-sm hover:border-signal-dim hover:text-paper transition-colors"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
     </motion.div>
   )
 }
